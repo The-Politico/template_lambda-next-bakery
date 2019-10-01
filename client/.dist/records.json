@@ -7,22 +7,12 @@
     "byName": {
       "static/runtime/webpack.js": 0,
       "commons": 1,
-      "static/YmH_TebC03wck-Ql0iZeJ/pages/[slug].js": 2,
-      "static/YmH_TebC03wck-Ql0iZeJ/pages/[slug]/amp.js": 3,
-      "static/YmH_TebC03wck-Ql0iZeJ/pages/_app.js": 4,
-      "static/YmH_TebC03wck-Ql0iZeJ/pages/_error.js": 5,
-      "static/YmH_TebC03wck-Ql0iZeJ/pages/index.js": 6,
-      "static/runtime/main.js": 7,
-      "static/ML0bZQUUhBoYWwxmcswMF/pages/[slug].js": 8,
-      "static/ML0bZQUUhBoYWwxmcswMF/pages/[slug]/amp.js": 9,
-      "static/ML0bZQUUhBoYWwxmcswMF/pages/_app.js": 10,
-      "static/ML0bZQUUhBoYWwxmcswMF/pages/_error.js": 11,
-      "static/ML0bZQUUhBoYWwxmcswMF/pages/index.js": 12,
-      "static/8wc801GWc6bjrsCdHv2js/pages/[slug].js": 2,
-      "static/8wc801GWc6bjrsCdHv2js/pages/[slug]/amp.js": 3,
-      "static/8wc801GWc6bjrsCdHv2js/pages/_app.js": 4,
-      "static/8wc801GWc6bjrsCdHv2js/pages/_error.js": 5,
-      "static/8wc801GWc6bjrsCdHv2js/pages/index.js": 6
+      "static/runtime/main.js": 2,
+      "static/tRFeip3Ba3jWiS5PVZJ2-/pages/[slug].js": 3,
+      "static/tRFeip3Ba3jWiS5PVZJ2-/pages/[slug]/amp.js": 4,
+      "static/tRFeip3Ba3jWiS5PVZJ2-/pages/_app.js": 5,
+      "static/tRFeip3Ba3jWiS5PVZJ2-/pages/_error.js": 6,
+      "static/tRFeip3Ba3jWiS5PVZJ2-/pages/index.js": 7
     },
     "bySource": {},
     "usedIds": [

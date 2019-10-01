@@ -3,5 +3,5 @@
   "github_org": "The-Politico",
   "github_repo": "template_lambda-next-bakery",
   "github_branch": "master",
-  "project_slug": "template-lambda-spa-bakery"
+  "project_slug": "template-lambda-next-bakery"
 }

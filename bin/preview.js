@@ -1,6 +1,7 @@
 const open = require('open');
 const portfinder = require('portfinder');
 const StaticServer = require('static-server');
+const { TMP } = require('../config/constants/paths');
 
 // Don't start up a preview on Lambda
 if (process.env.LAMBDA) process.exit(0);
@@ -11,7 +12,7 @@ portfinder.getPort(function(err, port) {
   if (err) return console.log('Error finding open port...');
 
   const server = new StaticServer({
-    rootPath: './tmp',
+    rootPath: TMP,
     port: 8000,
   });
 

@@ -1,7 +1,8 @@
-const path = require('path');
+'use strict';
+
 const fs = require('fs-extra');
-const locations = require('../constants/locations');
+const { DATA } = require('../../config/constants/paths');
 
 module.exports = function(data) {
-  fs.writeJsonSync(path.resolve(locations.BAKERY_DIR, 'data.json'), data);
+  fs.writeJsonSync(DATA, data);
 };

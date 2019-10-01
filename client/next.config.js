@@ -4,7 +4,7 @@ const paths = require('../config/constants/paths');
 const routes = require('./routes');
 
 module.exports = {
-  distDir: path.relative(__dirname, path.resolve(paths.TMP, 'bakery/.dist')),
+  distDir: path.relative(__dirname, path.resolve(__dirname, '.dist')),
   exportTrailingSlash: true,
   assetPrefix: paths.APP_ROOT,
   exportPathMap: routes,

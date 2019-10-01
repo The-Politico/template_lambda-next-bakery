@@ -1,15 +1,20 @@
-const paths = require('../config/constants/paths');
+const { APP_ROOT, DATA } = require('../config/constants/paths');
 
 module.exports = function() {
+  // Make sure to pass page data as context to all your routes.
+  const pages = require(DATA);
+  const appRoot = APP_ROOT;
+
   // Homepage
   const routes = {
     '/': {
       page: '/',
-      query: { appRoot: paths.APP_ROOT },
+      query: {
+        pages,
+        appRoot,
+      },
     },
   };
-
-  const pages = require(paths.DATA);
 
   const { date } = pages[0];
 
@@ -18,12 +23,21 @@ module.exports = function() {
     // Normal page
     routes[`/${slug}`] = {
       page: '/[slug]',
-      query: { slug, date, appRoot: paths.APP_ROOT },
+      query: {
+        slug,
+        date,
+        pages,
+        appRoot,
+      },
     };
     // AMP page
     routes[`/${slug}/amp`] = {
       page: '/[slug]/amp',
-      query: { slug, appRoot: paths.APP_ROOT },
+      query: {
+        slug,
+        pages,
+        appRoot,
+      },
     };
   });
 

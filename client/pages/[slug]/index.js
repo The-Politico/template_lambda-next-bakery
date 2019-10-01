@@ -1,14 +1,13 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Pages from 'DATA';
 import Bacon from 'Content/bacon.md';
 
 import Header from 'Components/header';
 
 const Page = (props) => {
   const router = useRouter();
-  const { slug, appRoot } = router.query;
-  const pageData = Pages.find(p => p.slug === slug);
+  const { slug, appRoot, pages } = router.query;
+  const pageData = pages.find(p => p.slug === slug);
   if (!pageData) return null;
   return (
     <div>

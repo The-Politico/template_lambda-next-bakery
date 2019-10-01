@@ -1,13 +1,12 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Pages from 'DATA';
 
 import Header from 'Components/header';
 
 const Home = (props) => {
   const router = useRouter();
-  const { appRoot } = router.query;
-  const pages = Pages.map(page => (
+  const { appRoot, pages } = router.query;
+  const Pages = pages.map(page => (
     <li>
       <Link href={`${appRoot || '/'}${page.slug}/`}>
         <a>{page.title}</a>
@@ -18,7 +17,7 @@ const Home = (props) => {
     <div>
       <Header />
       <h1>Home page</h1>
-      <ul>{pages}</ul>
+      <ul>{Pages}</ul>
     </div>
   );
 };

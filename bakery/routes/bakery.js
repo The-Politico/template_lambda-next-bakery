@@ -5,6 +5,7 @@ const authenticate = require('../authenticate');
 const { execSync } = require('child_process');
 const cleanBakery = require('../utils/cleanBakery');
 const writeData = require('../utils/writeData');
+const s3Sync = require('../utils/s3Sync');
 
 router.post('/', authenticate, function(req, res) {
   // Clean the bakery of stale files
@@ -13,15 +14,6 @@ router.post('/', authenticate, function(req, res) {
   // Write data to tmp
   writeData(req.body);
 
-  // Rebuild assets
-  try {
-    execSync('node bin/build.js');
-  } catch (err) {
-    res
-      .status(500)
-      .send({ error: `BUILD ERROR: ${err.message}` });
-  }
-
   // Bake static pages
   try {
     execSync('node bin/bake.js');
@@ -29,6 +21,14 @@ router.post('/', authenticate, function(req, res) {
     res
       .status(500)
       .send({ error: `BAKE ERROR: ${err.message}` });
+  }
+
+  try {
+    if (process.env.LAMBDA) s3Sync();
+  } catch (err) {
+    res
+      .status(500)
+      .send({ error: `SYNC ERROR: ${err.message}` });
   }
 
   res

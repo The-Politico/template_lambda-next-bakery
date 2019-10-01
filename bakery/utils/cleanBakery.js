@@ -1,9 +1,11 @@
+'use strict';
+
 const glob = require('glob');
 const { removeSync, ensureDirSync } = require('fs-extra');
-const locations = require('../constants/locations');
+const { BAKERY_DIR } = require('../../config/constants/paths');
 
 module.exports = function() {
-  const files = glob.sync(`${locations.BAKERY_DIR}/**`);
+  const files = glob.sync(`${BAKERY_DIR}/pages/**`);
   files.forEach(function(f) { removeSync(f); });
-  ensureDirSync(locations.BAKERY_DIR);
+  ensureDirSync(BAKERY_DIR);
 };

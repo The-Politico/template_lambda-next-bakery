@@ -1,13 +1,12 @@
 import Link from 'next/link';
-import Pages from 'DATA';
 
 import Header from 'Components/header';
 
 export const config = { amp: true };
 
 const AmpPage = (props) => {
-  const { slug, appRoot } = props.query;
-  const pageData = Pages.find(p => p.slug === slug);
+  const { slug, appRoot, pages } = props.query;
+  const pageData = pages.find(p => p.slug === slug);
   return (
     <div>
       <Header />

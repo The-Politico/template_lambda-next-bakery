@@ -10,7 +10,7 @@ const syncS3 = async function() {
       directory: BAKERY_DIR,
       path: publishPath,
       bucket: process.env.AWS_BUCKET_NAME,
-      invalidate: true,
+      invalidate: process.env.AWS_BUCKET_NAME === 'interactives.politico.com',
     },
     {
       s3Options: {

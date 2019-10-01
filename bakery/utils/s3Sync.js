@@ -1,6 +1,7 @@
 'use strict';
 
 const s3 = require('s3');
+const path = require('path');
 const cloudfrontInvalidate = require('./cloudfrontInvalidate');
 const { publishPath } = require('../../package.json');
 const { BAKERY_DIR } = require('../../config/constants/paths');
@@ -9,7 +10,7 @@ const REJECT_DEPTH = 3;
 
 const syncS3 = function(deleteRemoved = false) {
   const prefix = publishPath.replace(/\/?$/, '/');
-  const localDir = BAKERY_DIR;
+  const localDir = path.join(BAKERY_DIR, 'pages');
 
   if (prefix.split('/').length < REJECT_DEPTH) {
     return new Error(`Sync path less than ${REJECT_DEPTH} folders deep in bucket.`);

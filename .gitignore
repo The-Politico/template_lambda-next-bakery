@@ -138,5 +138,5 @@ typings/
 # End of https://www.gitignore.io/api/node,macos,linux
 
 # Ignore all tmp except data.json
-tmp/
+tmp/bakery/*
 !tmp/bakery/data.json

@@ -16,7 +16,6 @@
   "dependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.4.4",
     "@politico/graphics-kit": "*",
-    "@politico/interactive-bin": "^1.0.0-beta.16",
     "@politico/interactive-style": "*",
     "aws-sdk": "^2.447.0",
     "aws-serverless-express": "^3.3.5",

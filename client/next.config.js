@@ -1,12 +1,12 @@
 const path = require('path');
 const webpack = require('../config/next.webpack');
-const paths = require('../config/constants/paths');
+const { APP_ROOT } = require('../config/constants/paths');
 const routes = require('./routes');
 
 module.exports = {
   distDir: path.relative(__dirname, path.resolve(__dirname, '.dist')),
   exportTrailingSlash: true,
-  assetPrefix: paths.APP_ROOT,
+  assetPrefix: APP_ROOT,
   exportPathMap: routes,
   webpack,
 };

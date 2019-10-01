@@ -14,6 +14,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@politico/markdown-react-loader": "^0.0.3",
     "aws-sdk": "^2.447.0",
     "aws-serverless-express": "^3.3.5",
     "body-parser": "^1.18.3",
@@ -40,7 +41,6 @@
   },
   "devDependencies": {
     "@politico/eslint-config-interactives": "^0.0.5",
-    "@politico/markdown-react-loader": "^0.0.3",
     "eslint": "^5.16.0",
     "open": "^6.4.0",
     "portfinder": "^1.0.24",

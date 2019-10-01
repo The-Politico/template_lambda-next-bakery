@@ -7,7 +7,7 @@ const cleanBakery = require('../utils/cleanBakery');
 const writeData = require('../utils/writeData');
 const s3Sync = require('../utils/s3Sync');
 
-router.post('/', authenticate, function(req, res) {
+router.post('/', authenticate, async function(req, res) {
   // Clean the bakery of stale files
   cleanBakery();
 
@@ -23,13 +23,13 @@ router.post('/', authenticate, function(req, res) {
       .send({ error: `BAKE ERROR: ${err.message}` });
   }
 
-  // try {
-  //   if (process.env.LAMBDA) s3Sync();
-  // } catch (err) {
-  //   res
-  //     .status(500)
-  //     .send({ error: `SYNC ERROR: ${err.message}` });
-  // }
+  try {
+    if (process.env.LAMBDA) await s3Sync(false);
+  } catch (err) {
+    res
+      .status(500)
+      .send({ error: `SYNC ERROR: ${err.message}` });
+  }
 
   res
     .status(200)

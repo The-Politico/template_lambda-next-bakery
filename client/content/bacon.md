@@ -1,3 +1,5 @@
+This page is rendered to static HTML using [Next.js](https://nextjs.org/).
+
 Bacon *ipsum* dolor amet chicken pork belly doner, brisket pastrami meatloaf cow ham picanha andouille sirloin tri-tip filet mignon t-bone. Cow pork chop pig, bacon beef prosciutto pork belly jerky landjaeger ground round. T-bone rump doner chuck ham hock, bresaola beef ribs picanha pig meatball alcatra boudin cupim pork. Kevin burgdoggen hamburger jowl, swine porchetta meatball. Tongue frankfurter shank fatback.
 
 **Short loin cupim sausage chicken salami tail hamburger, fatback doner.** Salami jerky turducken boudin. Salami pork belly pork loin filet mignon capicola. Spare ribs fatback venison biltong.

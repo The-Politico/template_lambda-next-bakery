@@ -1,0 +1,25 @@
+@import "~politico-style/scss/base/theme/_fonts.scss";
+
+.component :global {
+  margin-top: -20px;
+  ul{
+    font-family: $din;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    li{
+      display: inline-block;
+      padding: 0 15px;
+      a{
+        color: #999;
+        cursor: pointer;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

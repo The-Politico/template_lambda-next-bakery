@@ -1,6 +1,9 @@
 import Link from 'next/link';
 
-import Header from 'Components/header';
+import { Navigation, Header } from '@politico/interactive-style-sketch';
+import PageList from 'Components/pageList';
+
+import 'politico-style/scss/base/main.scss';
 
 const Home = (props) => {
   const { appRoot, pages } = props.query;
@@ -13,9 +16,12 @@ const Home = (props) => {
   ));
   return (
     <div>
-      <Header />
-      <h1>Home page</h1>
-      <ul>{Pages}</ul>
+      <Navigation appName='Next.js app' />
+      <Header
+        title='Home'
+        subhed='Interactive News'
+      />
+      <PageList>{Pages}</PageList>
     </div>
   );
 };

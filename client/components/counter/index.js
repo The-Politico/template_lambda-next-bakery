@@ -1,4 +1,7 @@
 import React from 'react';
+import { Button } from '@politico/interactive-style-sketch';
+
+import { component } from './styles.scss';
 
 class Counter extends React.Component {
   constructor(props) {
@@ -10,14 +13,12 @@ class Counter extends React.Component {
 
   render() {
     return (
-      <div>
-        <p>
-          <button
-            onClick={() => this.setState(({ count }) => ({ count: count + 1 }))}
-          >
-            Count is {this.state.count}
-          </button>
-        </p>
+      <div className={component} >
+        <Button
+          onClick={() => this.setState(({ count }) => ({ count: count + 1 }))}
+        >
+          Count
+        </Button> <p>{this.state.count}</p>
       </div>
     );
   }

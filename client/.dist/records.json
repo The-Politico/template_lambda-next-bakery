@@ -1,18 +1,385 @@
 {
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--6-1!../node_modules/sass-loader/lib/loader.js??ref--6-2!../node_modules/politico-style/scss/base/main.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--6-1!../node_modules/sass-loader/lib/loader.js??ref--6-2!components/counter/styles.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--6-1!../node_modules/sass-loader/lib/loader.js??ref--6-2!components/pageList/styles.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Text/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/RichText/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Select/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Typeahead/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Button/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Header/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Instructions/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Navigation/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/EmbedPreview/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/ImageUpload/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--8-1!../node_modules/react-loader-spinner/dist/loader/css/Plane.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--8-1!../node_modules/react-loader-spinner/dist/loader/css/CradleLoader.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--8-1!../node_modules/react-loader-spinner/dist/loader/css/Triangle.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
   "modules": {
-    "byIdentifier": {},
-    "usedIds": {}
+    "byIdentifier": {
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Text/index.css 0": 0,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Text/index.css 1": 1,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Text/index.css 2": 2,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Text/index.css 3": 3,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/RichText/index.css 0": 4,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/RichText/index.css 1": 5,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/RichText/index.css 2": 6,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/RichText/index.css 3": 7,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Select/index.css 0": 8,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Select/index.css 1": 9,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Select/index.css 2": 10,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Select/index.css 3": 11,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Typeahead/index.css 0": 12,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Typeahead/index.css 1": 13,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Typeahead/index.css 2": 14,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Typeahead/index.css 3": 15,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/ImageUpload/index.css 0": 16,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/ImageUpload/index.css 1": 17,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/ImageUpload/index.css 2": 18,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/ImageUpload/index.css 3": 19,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/react-loader-spinner/dist/loader/css/CradleLoader.css 0": 20,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/react-loader-spinner/dist/loader/css/Triangle.css 0": 21,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/react-loader-spinner/dist/loader/css/Plane.css 0": 22,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Button/index.css 0": 23,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Button/index.css 1": 24,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Button/index.css 2": 25,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Button/index.css 3": 26,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Header/index.css 0": 27,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Header/index.css 1": 28,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Header/index.css 2": 29,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Header/index.css 3": 30,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Instructions/index.css 0": 31,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Instructions/index.css 1": 32,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Instructions/index.css 2": 33,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Instructions/index.css 3": 34,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/EmbedPreview/index.css 0": 35,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/EmbedPreview/index.css 1": 36,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/EmbedPreview/index.css 2": 37,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/EmbedPreview/index.css 3": 38,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Navigation/index.css 0": 39,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Navigation/index.css 1": 40,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Navigation/index.css 2": 41,
+      "css ../node_modules/css-loader/index.js??ref--8-1!../node_modules/@politico/interactive-style-sketch/dist/components/Navigation/index.css 3": 42,
+      "css ../node_modules/css-loader/index.js??ref--6-1!../node_modules/sass-loader/lib/loader.js??ref--6-2!components/pageList/styles.scss 0": 43,
+      "css ../node_modules/css-loader/index.js??ref--6-1!../node_modules/sass-loader/lib/loader.js??ref--6-2!components/counter/styles.scss 0": 44,
+      "css ../node_modules/css-loader/index.js??ref--6-1!../node_modules/sass-loader/lib/loader.js??ref--6-2!../node_modules/politico-style/scss/base/main.scss 0": 45
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19,
+      "20": 20,
+      "21": 21,
+      "22": 22,
+      "23": 23,
+      "24": 24,
+      "25": 25,
+      "26": 26,
+      "27": 27,
+      "28": 28,
+      "29": 29,
+      "30": 30,
+      "31": 31,
+      "32": 32,
+      "33": 33,
+      "34": 34,
+      "35": 35,
+      "36": 36,
+      "37": 37,
+      "38": 38,
+      "39": 39,
+      "40": 40,
+      "41": 41,
+      "42": 42,
+      "43": 43,
+      "44": 44,
+      "45": 45
+    }
   },
   "chunks": {
     "byName": {
       "static/runtime/webpack.js": 0,
       "commons": 1,
-      "static/_lJh351hdT8E0GbrJf4YC/pages/[slug].js": 2,
-      "static/_lJh351hdT8E0GbrJf4YC/pages/[slug]/amp.js": 3,
-      "static/_lJh351hdT8E0GbrJf4YC/pages/_app.js": 4,
-      "static/_lJh351hdT8E0GbrJf4YC/pages/_error.js": 5,
-      "static/_lJh351hdT8E0GbrJf4YC/pages/index.js": 6,
-      "static/runtime/main.js": 7
+      "styles": 2,
+      "static/CQDHNrVc77pLlxHxHIzp9/pages/[slug].js": 3,
+      "static/CQDHNrVc77pLlxHxHIzp9/pages/[slug]/amp.js": 4,
+      "static/CQDHNrVc77pLlxHxHIzp9/pages/_app.js": 5,
+      "static/CQDHNrVc77pLlxHxHIzp9/pages/_error.js": 6,
+      "static/CQDHNrVc77pLlxHxHIzp9/pages/index.js": 7,
+      "static/runtime/main.js": 8
     },
     "bySource": {},
     "usedIds": [
@@ -23,7 +390,8 @@
       4,
       5,
       6,
-      7
+      7,
+      8
     ]
   }
 }

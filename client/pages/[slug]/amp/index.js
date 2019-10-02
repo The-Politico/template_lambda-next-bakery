@@ -1,6 +1,6 @@
 import Link from 'next/link';
-
-import Header from 'Components/header';
+import PageList from 'Components/pageList';
+import Bacon from 'Content/bacon.md';
 
 export const config = { amp: true };
 
@@ -9,9 +9,8 @@ const AmpPage = (props) => {
   const pageData = pages.find(p => p.slug === slug);
   return (
     <div>
-      <Header />
-      <h1>{pageData.title} for amp</h1>
-      <ul>
+      <h1>AMP: {pageData.title}</h1>
+      <PageList>
         <li>
           <a href={'./../'}>Main page</a>
         </li>
@@ -20,7 +19,10 @@ const AmpPage = (props) => {
             <a>Back to home!</a>
           </Link>
         </li>
-      </ul>
+      </PageList>
+      <section>
+        <Bacon />
+      </section>
     </div>
   );
 };

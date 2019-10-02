@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport { component } from './styles.scss';\n\nconst PageList = props => __jsx(\"div\", {\n  className: component\n}, __jsx(\"ul\", null, props.children));\n\nexport default PageList;","map":null,"metadata":{},"sourceType":"module"}

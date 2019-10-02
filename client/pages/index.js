@@ -1,11 +1,9 @@
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 import Header from 'Components/header';
 
 const Home = (props) => {
-  const router = useRouter();
-  const { appRoot, pages } = router.query;
+  const { appRoot, pages } = props.query;
   const Pages = pages.map(page => (
     <li>
       <Link href={`${appRoot || '/'}${page.slug}/`}>
@@ -23,8 +21,7 @@ const Home = (props) => {
 };
 
 Home.getInitialProps = async function({ query }) {
-  const { appRoot } = query;
-  return { appRoot };
+  return { query };
 };
 
 export default Home;

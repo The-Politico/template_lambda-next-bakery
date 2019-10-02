@@ -29,8 +29,7 @@ const Page = (props) => {
 };
 
 Page.getInitialProps = async function({ query }) {
-  const { appRoot } = query;
-  return { appRoot, query };
+  return { query };
 };
 
 export default Page;

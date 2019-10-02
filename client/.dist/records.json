@@ -7,11 +7,11 @@
     "byName": {
       "static/runtime/webpack.js": 0,
       "commons": 1,
-      "static/--g0dtynvXVD6oQ2kyfNa/pages/[slug].js": 2,
-      "static/--g0dtynvXVD6oQ2kyfNa/pages/[slug]/amp.js": 3,
-      "static/--g0dtynvXVD6oQ2kyfNa/pages/_app.js": 4,
-      "static/--g0dtynvXVD6oQ2kyfNa/pages/_error.js": 5,
-      "static/--g0dtynvXVD6oQ2kyfNa/pages/index.js": 6,
+      "static/_lJh351hdT8E0GbrJf4YC/pages/[slug].js": 2,
+      "static/_lJh351hdT8E0GbrJf4YC/pages/[slug]/amp.js": 3,
+      "static/_lJh351hdT8E0GbrJf4YC/pages/_app.js": 4,
+      "static/_lJh351hdT8E0GbrJf4YC/pages/_error.js": 5,
+      "static/_lJh351hdT8E0GbrJf4YC/pages/index.js": 6,
       "static/runtime/main.js": 7
     },
     "bySource": {},

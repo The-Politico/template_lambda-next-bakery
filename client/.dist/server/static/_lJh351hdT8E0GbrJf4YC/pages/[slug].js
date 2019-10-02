@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -139,25 +139,18 @@ function withRouter(ComposedComponent) {
 
 /***/ }),
 
+/***/ 1:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("roMh");
+
+
+/***/ }),
+
 /***/ "1qCV":
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("qJj/");
-
-/***/ }),
-
-/***/ 2:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("RNiq");
-
-
-/***/ }),
-
-/***/ "4Q3z":
-/***/ (function(module, exports) {
-
-module.exports = require("next/router");
 
 /***/ }),
 
@@ -600,51 +593,6 @@ const Header = () => __jsx("div", {
 
 /***/ }),
 
-/***/ "RNiq":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("4Q3z");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("5dyF");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var Components_header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("QyV/");
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-const Home = props => {
-  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
-  const {
-    appRoot,
-    pages
-  } = router.query;
-  const Pages = pages.map(page => __jsx("li", null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: `${appRoot || '/'}${page.slug}/`
-  }, __jsx("a", null, page.title))));
-  return __jsx("div", null, __jsx(Components_header__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], null), __jsx("h1", null, "Home page"), __jsx("ul", null, Pages));
-};
-
-Home.getInitialProps = async function ({
-  query
-}) {
-  const {
-    appRoot
-  } = query;
-  return {
-    appRoot
-  };
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Home);
-
-/***/ }),
-
 /***/ "TUA0":
 /***/ (function(module, exports) {
 
@@ -700,6 +648,13 @@ function getRouteMatcher(routeRegex) {
 }
 
 exports.getRouteMatcher = getRouteMatcher;
+
+/***/ }),
+
+/***/ "XBPO":
+/***/ (function(module, exports) {
+
+module.exports = require("mustache");
 
 /***/ }),
 
@@ -1583,6 +1538,13 @@ module.exports = __webpack_require__("TUA0");
 
 /***/ }),
 
+/***/ "id0+":
+/***/ (function(module, exports) {
+
+module.exports = require("react-markdown");
+
+/***/ }),
+
 /***/ "k3h2":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1626,6 +1588,30 @@ module.exports = require("core-js/library/fn/object/create");
 
 /***/ }),
 
+/***/ "on1h":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var React = __webpack_require__("cDcd");
+
+var ReactMarkdown = __webpack_require__("id0+");
+
+var mustache = __webpack_require__("XBPO");
+
+module.exports = function (props) {
+  return React.createElement(ReactMarkdown, _objectSpread({
+    source: mustache.render("Bacon *ipsum* dolor amet chicken pork belly doner, brisket pastrami meatloaf cow ham picanha andouille sirloin tri-tip filet mignon t-bone. Cow pork chop pig, bacon beef prosciutto pork belly jerky landjaeger ground round. T-bone rump doner chuck ham hock, bresaola beef ribs picanha pig meatball alcatra boudin cupim pork. Kevin burgdoggen hamburger jowl, swine porchetta meatball. Tongue frankfurter shank fatback.\n\n**Short loin cupim sausage chicken salami tail hamburger, fatback doner.** Salami jerky turducken boudin. Salami pork belly pork loin filet mignon capicola. Spare ribs fatback venison biltong.\n\n[Meatloaf shankle rump, kevin frankfurter cupim pastrami bacon short loin pork belly.](https://baconipsum.com/) Burgdoggen ham hock chicken capicola brisket ham beef short loin. Jowl hamburger alcatra tail strip steak, tongue spare ribs swine doner picanha filet mignon chicken turducken ham hock. Pig bacon turducken short ribs. Doner strip steak cow, beef turducken tenderloin short ribs ground round prosciutto ham tri-tip tail sausage. Tenderloin corned beef fatback pork hamburger, ham hock tail drumstick ground round spare ribs shankle t-bone ribeye.\n", props.context || {})
+  }, props), null);
+};
+
+/***/ }),
+
 /***/ "pzQc":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1664,6 +1650,87 @@ module.exports = require("core-js/library/fn/object/keys");
 /***/ (function(module, exports) {
 
 module.exports = require("prop-types");
+
+/***/ }),
+
+/***/ "roMh":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__("cDcd");
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+
+// EXTERNAL MODULE: ../node_modules/next/link.js
+var next_link = __webpack_require__("5dyF");
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
+
+// EXTERNAL MODULE: ./content/bacon.md
+var bacon = __webpack_require__("on1h");
+var bacon_default = /*#__PURE__*/__webpack_require__.n(bacon);
+
+// EXTERNAL MODULE: ./components/header/index.js
+var header = __webpack_require__("QyV/");
+
+// CONCATENATED MODULE: ./components/counter/index.js
+var __jsx = external_react_default.a.createElement;
+
+
+class counter_Counter extends external_react_default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+
+  render() {
+    return __jsx("div", null, __jsx("p", null, __jsx("button", {
+      onClick: () => this.setState(({
+        count
+      }) => ({
+        count: count + 1
+      }))
+    }, "Count is ", this.state.count)));
+  }
+
+}
+
+/* harmony default export */ var counter = (counter_Counter);
+// CONCATENATED MODULE: ./pages/[slug]/index.js
+
+var _slug_jsx = external_react_default.a.createElement;
+
+
+
+
+
+const Page = props => {
+  const {
+    slug,
+    appRoot,
+    pages
+  } = props.query;
+  const pageData = pages.find(p => p.slug === slug);
+  if (!pageData) return null;
+  return _slug_jsx("div", null, _slug_jsx(header["a" /* default */], null), _slug_jsx("h1", null, pageData.title), _slug_jsx("ul", null, _slug_jsx("li", null, _slug_jsx("a", {
+    href: "./amp/"
+  }, "Amp page")), _slug_jsx("li", null, _slug_jsx(link_default.a, {
+    href: appRoot
+  }, _slug_jsx("a", null, "Back to home!")))), _slug_jsx(counter, null), _slug_jsx(bacon_default.a, null));
+};
+
+Page.getInitialProps = async function ({
+  query
+}) {
+  return {
+    query
+  };
+};
+
+/* harmony default export */ var _slug_ = __webpack_exports__["default"] = (Page);
 
 /***/ }),
 

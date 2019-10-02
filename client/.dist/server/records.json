@@ -19,12 +19,12 @@
   },
   "chunks": {
     "byName": {
-      "static/--g0dtynvXVD6oQ2kyfNa/pages/[slug].js": 0,
-      "static/--g0dtynvXVD6oQ2kyfNa/pages/[slug]/amp.js": 1,
-      "static/--g0dtynvXVD6oQ2kyfNa/pages/_app.js": 2,
-      "static/--g0dtynvXVD6oQ2kyfNa/pages/_document.js": 3,
-      "static/--g0dtynvXVD6oQ2kyfNa/pages/_error.js": 4,
-      "static/--g0dtynvXVD6oQ2kyfNa/pages/index.js": 5
+      "static/_lJh351hdT8E0GbrJf4YC/pages/[slug].js": 0,
+      "static/_lJh351hdT8E0GbrJf4YC/pages/[slug]/amp.js": 1,
+      "static/_lJh351hdT8E0GbrJf4YC/pages/_app.js": 2,
+      "static/_lJh351hdT8E0GbrJf4YC/pages/_document.js": 3,
+      "static/_lJh351hdT8E0GbrJf4YC/pages/_error.js": 4,
+      "static/_lJh351hdT8E0GbrJf4YC/pages/index.js": 5
     },
     "bySource": {},
     "usedIds": [

@@ -1,38 +1,41 @@
 ![](https://www.politico.com/interactives/cdn/images/badge.svg)
 
-# template_lambda-spa-bakery
+# template_lambda-next-bakery
 
-## Development docs
+This is a [POLITICO interactive template](https://github.com/The-Politico/politico-interactive-templates) to create an AWS Lambda-backed static page bakery using [NEXT.js](https://nextjs.org/).
 
-- [Deploying infrastructure](docs/deploying-infrastructure.md)
+### Why this?
 
-- [Developing bakery handlers](docs/developing-bakery-handlers.md)
+At POLITICO, we have one commandment: Always bake public pages to flat files stored on AWS S3.
 
-- [Developing page assets](docs/developing-page-assets.md)
+Sometimes, we need to rebake the pages at a fast clip for live coverage like elections or in response to a change in a data source, like a database updated by our newsroom. We've also committed to component-based page architecture and use server-side rendering to create fast, SEO-friendly pages.
 
+This template represents a design pattern for creating a severless "bakery" that acts as a microservice for building static, server-side rendered pages on demand from dynamic data sources.
 
-## Lambda environment
+Say you have a process -- whatever process, any process! -- that on completion should trigger a page rebake. With this structure, your process can hit a simple public API triggering a serverless function that rebakes the page with new data.
 
-Once you deploy your Lambda instance, make sure you set these variables in its environment.
+Using serverless architecture means page rebakes can scale to whatever size you need at the absolute minimum cost. It also means you don't ever need to worry about server availability or balance the cost of rebaking complex pages with processing the data behind them.
 
-```
-AWS_PUBLISH_ACCESS_KEY_ID=
-AWS_PUBLISH_SECRET_ACCESS_KEY=
-AWS_BUCKET_NAME=
-AWS_CLOUDFRONT_DISTRIBUTION=
-API_VERIFICATION_TOKEN=
-```
+### What's in it?
 
-The variable `LAMBDA` should already be set.
+The template includes an [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template for creating a bakery microservice backed by AWS Lambda and API Gateway. It also includes [Terraform](https://www.terraform.io/) scripts to build a pipeline for continuous integration with a GitHub repository.
 
-## Testing
+The template contains boilerplate for both your Lambda bakery as well as the frontend assets of your page, meaning you can easily share the same project between developers and designers.
 
-To test, create a file named `dev/test/.env` using the `.env.example` in that folder as an example, and fill in the environment variables.
+## Quickstart
 
+1. Install the template using [POLITICO interactive templates](https://github.com/The-Politico/politico-interactive-templates).
 
-Now run:
+  ```
+  $ pit register https://github.com/The-Politico/template_lambda-next-bakery
+  ```
 
-```
-$ yarn build
-$ yarn test
-```
+2. Use PIT to create a new project from this template.
+
+  ```
+  $ mkdir new-project
+  $ cd new-project
+  $ pit new
+  ```
+
+3. Follow the guide in the created README to build out your project from the template.

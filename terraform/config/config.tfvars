@@ -1,7 +1,7 @@
 {
-  "aws_region": "us-east-1",
-  "github_org": "The-Politico",
-  "github_repo": "template_lambda-next-bakery",
+  "aws_region": "<%=aws_region%>",
+  "github_org": "<%=github_org%>",
+  "github_repo": "<%=github_repo%>",
   "github_branch": "master",
-  "project_slug": "template-lambda-next-bakery"
+  "project_slug": "<%=project_slug%>"
 }

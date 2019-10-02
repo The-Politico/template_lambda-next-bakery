@@ -1,9 +1,9 @@
 {
-  "name": "template-lambda-spa-bakery",
+  "name": "<%=project_slug%>",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "publishPath": "interactives/2019/template-lambda-spa-bakery/",
+  "publishPath": "<%=prefix_path%>",
   "scripts": {
     "test": "mocha $(find test -name '*.js') --require config/mocha.require.js --timeout 30000",
     "start": "npx ./bin/dev.js",

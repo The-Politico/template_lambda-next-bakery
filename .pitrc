@@ -1,5 +1,5 @@
 module.exports = {
-  'name': 'Lambda Bakery',
+  'name': 'Lambda Next.js Bakery',
   'version': "^1.0.0",
   'renderer': 'ejs',
   'category': null,

@@ -2,8 +2,8 @@
 
 const AWS = require('aws-sdk');
 
-const cloudfrontInvalidate = function(invalidateList) {
-  return new Promise(function(resolve, reject) {
+const cloudfrontInvalidate = (invalidateList) =>
+  new Promise((resolve, reject) => {
     const cloudfront = new AWS.CloudFront({
       credentials: new AWS.Credentials(
         process.env.AWS_PUBLISH_ACCESS_KEY_ID || process.env.AWS_ACCESS_KEY_ID,
@@ -20,7 +20,7 @@ const cloudfrontInvalidate = function(invalidateList) {
           Items: invalidateList,
         },
       },
-    }, function(err, data) {
+    }, (err, data) => {
       if (err) {
         reject(err);
       }
@@ -28,6 +28,5 @@ const cloudfrontInvalidate = function(invalidateList) {
       resolve(data);
     });
   });
-};
 
 module.exports = cloudfrontInvalidate;

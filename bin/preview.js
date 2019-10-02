@@ -8,7 +8,7 @@ if (process.env.LAMBDA) process.exit(0);
 
 portfinder.basePort = 8000;
 
-portfinder.getPort(function(err, port) {
+portfinder.getPort((err, port) => {
   if (err) return console.log('Error finding open port...');
 
   const server = new StaticServer({
@@ -16,7 +16,7 @@ portfinder.getPort(function(err, port) {
     port: 8000,
   });
 
-  server.start(function() {
+  server.start(() => {
     const previewRoot = `http://localhost:${server.port}/bakery/pages/`;
     open(previewRoot);
     console.log(`Launching preview at: ${previewRoot}`);

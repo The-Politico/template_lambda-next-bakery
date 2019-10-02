@@ -24,7 +24,7 @@ server.use('/', bakeryRoute);
 server.use('/check', checkRoute);
 
 // Error handler
-server.use(function(err, req, res, next) {
+server.use((err, req, res, next) => {
   res.status(err.status).send({ error: err.message });
 });
 

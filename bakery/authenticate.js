@@ -2,7 +2,7 @@
 
 const errors = require('./errors');
 
-module.exports = function(req, res, next) {
+module.exports = (req, res, next) => {
   const TOKEN = process.env.API_VERIFICATION_TOKEN;
 
   if (TOKEN && !req.headers.authorization) {

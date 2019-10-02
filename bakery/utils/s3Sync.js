@@ -8,7 +8,7 @@ const { BAKERY_DIR } = require('../../config/constants/paths');
 
 const REJECT_DEPTH = 3;
 
-const syncS3 = function(deleteRemoved = false) {
+const syncS3 = (deleteRemoved = false) => {
   const prefix = publishPath.replace(/\/?$/, '/');
   const localDir = path.join(BAKERY_DIR, 'pages');
 
@@ -32,7 +32,7 @@ const syncS3 = function(deleteRemoved = false) {
       Bucket: process.env.AWS_BUCKET_NAME,
       Prefix: prefix,
     },
-    getS3Params: function(localFile, stat, callback) {
+    getS3Params: (localFile, stat, callback) => {
       const s3Params = {
         CacheControl: localFile.split('.').pop() === 'json' ? 'max-age=15' : 'max-age=60',
       };
@@ -40,12 +40,12 @@ const syncS3 = function(deleteRemoved = false) {
     },
   };
 
-  return new Promise(function(resolve, reject) {
+  return new Promise((resolve, reject) => {
     const uploader = client.uploadDir(uploadParams);
 
-    uploader.on('error', function(err) { reject(err); });
+    uploader.on('error', err => reject(err));
 
-    uploader.on('end', function() {
+    uploader.on('end', () => {
       console.log(`Synced ${localDir} to ${prefix}.`);
       if (process.env.AWS_CLOUDFRONT_DISTRIBUTION) {
         cloudfrontInvalidate([`/${prefix}*`]).then(resolve);

@@ -2,7 +2,7 @@ const path = require('path');
 const merge = require('lodash/merge');
 const aliases = require('./constants/aliases');
 
-module.exports = function(config, options) {
+module.exports = (config, options) => {
   config.resolve.alias = merge(config.resolve.alias, aliases);
   config.module.rules.push({
     test: /\.md$/,

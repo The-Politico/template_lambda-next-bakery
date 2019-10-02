@@ -13,7 +13,7 @@ const AmpPage = (props) => {
       <h1>{pageData.title} for amp</h1>
       <ul>
         <li>
-          <a href={appRoot}>Main page</a>
+          <a href={'./../'}>Main page</a>
         </li>
         <li>
           <Link href={appRoot}>

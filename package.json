@@ -7,9 +7,9 @@
   "scripts": {
     "test": "mocha $(find test -name '*.js') --require config/mocha.require.js --timeout 30000",
     "start": "npx ./bin/dev.js",
-    "build": "npx ./bin/build.js",
+    "build": "BUILD=1 npx ./bin/build.js",
     "preview": "npx ./bin/preview.js",
-    "bake": "npx ./bin/build.js && npx ./bin/bake.js && npx ./bin/preview.js"
+    "bake": "npx ./bin/build.js && LOCAL=1 npx ./bin/bake.js && npx ./bin/preview.js"
   },
   "author": "",
   "license": "MIT",

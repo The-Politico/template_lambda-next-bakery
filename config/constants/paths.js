@@ -4,7 +4,7 @@ const { publishPath } = require('../../package.json');
 // Default for dev
 let appRoot = '/';
 // A local baked state
-appRoot = process.env.BUILD ? '/bakery/pages/' : appRoot;
+appRoot = process.env.LOCAL ? '/bakery/pages/' : appRoot;
 // LAMBDA build environment...
 // Set the first conditional to the root of your project on S3
 appRoot = process.env.LAMBDA ? publishPath.replace(/^\/?/, '/') : appRoot;

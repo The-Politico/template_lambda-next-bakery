@@ -1798,6 +1798,44 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "../node_modules/
 
 /***/ }),
 
+/***/ "./components/counter/index.js":
+/*!*************************************!*\
+  !*** ./components/counter/index.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+class Counter extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+
+  render() {
+    return __jsx("div", null, __jsx("p", null, __jsx("button", {
+      onClick: () => this.setState(({
+        count
+      }) => ({
+        count: count + 1
+      }))
+    }, "Count is ", this.state.count)));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Counter);
+
+/***/ }),
+
 /***/ "./components/header/index.js":
 /*!************************************!*\
   !*** ./components/header/index.js ***!
@@ -1859,13 +1897,12 @@ module.exports = function (props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "../node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var Content_bacon_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Content/bacon.md */ "./content/bacon.md");
-/* harmony import */ var Content_bacon_md__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(Content_bacon_md__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var Components_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Components/header */ "./components/header/index.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "../node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var Content_bacon_md__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Content/bacon.md */ "./content/bacon.md");
+/* harmony import */ var Content_bacon_md__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(Content_bacon_md__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var Components_header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Components/header */ "./components/header/index.js");
+/* harmony import */ var Components_counter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Components/counter */ "./components/counter/index.js");
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -1874,19 +1911,19 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const Page = props => {
-  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
   const {
     slug,
     appRoot,
     pages
-  } = router.query;
+  } = props.query;
+  console.log('query', props.query, props.q);
   const pageData = pages.find(p => p.slug === slug);
   if (!pageData) return null;
-  return __jsx("div", null, __jsx(Components_header__WEBPACK_IMPORTED_MODULE_4__["default"], null), __jsx("h1", null, pageData.title), __jsx("ul", null, __jsx("li", null, __jsx("a", {
+  return __jsx("div", null, __jsx(Components_header__WEBPACK_IMPORTED_MODULE_3__["default"], null), __jsx("h1", null, pageData.title), __jsx("ul", null, __jsx("li", null, __jsx("a", {
     href: "./amp/"
-  }, "Amp page")), __jsx("li", null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, "Amp page")), __jsx("li", null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: appRoot
-  }, __jsx("a", null, "Back to home!")))), __jsx(Content_bacon_md__WEBPACK_IMPORTED_MODULE_3___default.a, null));
+  }, __jsx("a", null, "Back to home!")))), __jsx(Components_counter__WEBPACK_IMPORTED_MODULE_4__["default"], null), __jsx(Content_bacon_md__WEBPACK_IMPORTED_MODULE_2___default.a, null));
 };
 
 Page.getInitialProps = async function ({
@@ -1897,7 +1934,8 @@ Page.getInitialProps = async function ({
   } = query;
   return {
     appRoot,
-    query
+    query,
+    q: query
   };
 };
 
@@ -2002,17 +2040,6 @@ module.exports = require("core-js/library/fn/promise");
 /***/ (function(module, exports) {
 
 module.exports = require("mustache");
-
-/***/ }),
-
-/***/ "next/router":
-/*!******************************!*\
-  !*** external "next/router" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next/router");
 
 /***/ }),
 

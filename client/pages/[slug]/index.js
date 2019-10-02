@@ -1,12 +1,11 @@
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Bacon from 'Content/bacon.md';
 
 import Header from 'Components/header';
+import Counter from 'Components/counter';
 
 const Page = (props) => {
-  const router = useRouter();
-  const { slug, appRoot, pages } = router.query;
+  const { slug, appRoot, pages } = props.query;
   const pageData = pages.find(p => p.slug === slug);
   if (!pageData) return null;
   return (
@@ -23,6 +22,7 @@ const Page = (props) => {
           </Link>
         </li>
       </ul>
+      <Counter />
       <Bacon />
     </div>
   );

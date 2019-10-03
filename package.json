@@ -5,10 +5,11 @@
   "main": "index.js",
   "publishPath": "<%=prefix_path%>",
   "scripts": {
-    "test": "mocha $(find test -name '*.js') --require config/mocha.require.js --timeout 30000",
+    "test": "mocha $(find test -name '*.js') --timeout 30000",
     "start": "npx ./bin/dev.js",
     "build": "rm -rf client/.dist && npx ./bin/build.js",
     "preview": "npx ./bin/preview.js",
+    "server": "npx ./bin/server.js",
     "bake": "rm -rf client/.dist && npx ./bin/build.js && LOCAL=1 npx ./bin/bake.js && npx ./bin/preview.js"
   },
   "author": "",
@@ -46,7 +47,10 @@
   },
   "devDependencies": {
     "@politico/eslint-config-interactives": "^0.0.5",
+    "cheerio": "^1.0.0-rc.3",
     "eslint": "^5.16.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^6.2.1",
     "open": "^6.4.0",
     "portfinder": "^1.0.24",
     "static-server": "^2.2.1"

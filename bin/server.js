@@ -1,6 +1,6 @@
 const portfinder = require('portfinder');
 
-const server = require('../../bakery');
+const server = require('../bakery');
 
 process.env.LOCAL = 1;
 

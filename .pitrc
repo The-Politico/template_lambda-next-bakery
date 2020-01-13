@@ -1,3 +1,5 @@
+console.log('THIS TEMPLATE HAS BEEN DEPRECATED!! DO NOT USE!!!');
+
 module.exports = {
   'name': 'Lambda Next.js Bakery',
   'version': "^1.0.0",

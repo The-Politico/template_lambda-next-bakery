@@ -1,4 +1,5 @@
-console.log('THIS TEMPLATE HAS BEEN DEPRECATED!! DO NOT USE!!!');
+console.error('THIS TEMPLATE HAS BEEN DEPRECATED!! DO NOT USE!!!');
+process.exit(1);
 
 module.exports = {
   'name': 'Lambda Next.js Bakery',
